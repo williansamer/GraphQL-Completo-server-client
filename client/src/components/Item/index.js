@@ -1,4 +1,3 @@
-import { formatError } from "graphql";
 import React from "react";
 import { useContatosContext } from "../context/ContatosContext";
 import { GET_CONTATOS } from "../graphql";
