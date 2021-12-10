@@ -1,0 +1,27 @@
+type Contato{
+  id: Int
+  nome: String
+  email: String
+  telefone: String
+}
+
+input InputContato{
+  nome: String
+  email: String
+  telefone: String
+}
+
+input InputDelete{
+  id: Int
+  email: String
+}
+
+type Query{
+  contatos: [Contato]
+}
+
+type Mutation{
+  criarContato(data: InputContato): Contato
+  atualizarContato(id: Int!, data: InputContato): Contato
+  deletarContato(filtro: InputDelete): Boolean
+}

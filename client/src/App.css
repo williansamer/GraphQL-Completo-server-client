@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.App {
+  text-align: center;
+}
+
+.header{
+  width: 100vw;
+  height: 100px;
+  background-color: #530663;
+  color: rgb(35, 255, 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h1{
+  text-shadow: 2px 2px 1px #000;
+}
+
+main{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.container-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+label{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label h3{
+  padding-left: 10px;
+}
+
+input{
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  outline-color: rgb(25, 158, 8);
+}
+
+button{
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #530663;
+  border-radius: 10px;
+  font-size: 1.1em;
+  background-color: #fff;
+  color: black;
+  transition: all ease 0.5s;
+}
+
+button:hover{
+  border: none;
+  color: #fff;
+  background-color: #530663;
+}
+
+.container-contato{
+  width: 100%;
+  height: 450px;
+}
+
+.container-item{
+  display: inline-block;
+  width: 300px;
+  min-width: 200px;
+  margin: 10px 5px;
+}
+.header-item{
+  padding: 1px 7px;
+  background-color: #530663;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+.link{
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.close{
+  padding: 1px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.main-item{
+  margin-top: -10px;
+  padding-top: 25px ;
+  padding-bottom: 10px;
+  border: 1px solid #530663;
+}
+
+.main-item p{
+  font-size: 1.1em;
+  padding-bottom: 3px;
+}
+
+@media (max-width: 760px){
+
+  input{
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .container-item{
+    width: 200px;
+  }
+}
